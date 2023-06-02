@@ -1,0 +1,13 @@
+# HTTP Server Assignment
+
+- [PokeAPI](https://pokeapi.co/)
+- [httpbin.org](https://httpbin.org/)
+
+1. Create a git repository to store all your code on Github.
+2. Create an HTTP server using Flask.
+3. Make an endpoint that accepts a GET request and responds with a message like, "Hello World!"
+4. Make an endpoint that accepts a POST request with a body and responds with a message that includes the request body, that is, an `echo` endpoint.
+5. Make an endpoint that operates as a proxy for an endpoint on the PokeAPI: `https://pokeapi.co/`
+    - Basically if your server receives a GET request to /pokemon/eevee then it should return the same data as a GET request to `https://pokeapi.co/api/v2/pokemon/eevee`. You don't have to pick the pokemon endpoint, that is just an example.
+    - Your endpoint should also pass a parameter to the PokeAPI, so extending the above example, a request made to your server at /pokemon/bulbasaur should return the same data as a GET request to `https://pokeapi.co/api/v2/pokemon/bulbasaur`.
+6. Create a README.md file that explains to a developer how to run your server once they have cloned it. To facilitate this, I would also suggest starting a new python virtual environment to manage your python dependencies, including Flask and requests.
